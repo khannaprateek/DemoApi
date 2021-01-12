@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Prateek Khanna\\source\\repos\\WebApplication\\WebApplication\\WebApplication.csproj": {}
+    "C:\\Users\\Prateek.Khanna\\source\\repos\\DemoApi\\WebApplication.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Prateek Khanna\\source\\repos\\WebApplication\\WebApplication\\WebApplication.csproj": {
+    "C:\\Users\\Prateek.Khanna\\source\\repos\\DemoApi\\WebApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Prateek Khanna\\source\\repos\\WebApplication\\WebApplication\\WebApplication.csproj",
+        "projectUniqueName": "C:\\Users\\Prateek.Khanna\\source\\repos\\DemoApi\\WebApplication.csproj",
         "projectName": "WebApplication",
-        "projectPath": "C:\\Users\\Prateek Khanna\\source\\repos\\WebApplication\\WebApplication\\WebApplication.csproj",
-        "packagesPath": "C:\\Users\\Prateek Khanna\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Prateek Khanna\\source\\repos\\WebApplication\\WebApplication\\obj\\",
+        "projectPath": "C:\\Users\\Prateek.Khanna\\source\\repos\\DemoApi\\WebApplication.csproj",
+        "packagesPath": "C:\\Users\\Prateek.Khanna\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Prateek.Khanna\\source\\repos\\DemoApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Prateek Khanna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Prateek.Khanna\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,6 +26,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -37,10 +38,15 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.AspNet.WebApi.Client": {
               "target": "Package",
               "version": "[5.2.7, )"
+            },
+            "System.Net.Http.Json": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             }
           },
           "imports": [
@@ -61,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
