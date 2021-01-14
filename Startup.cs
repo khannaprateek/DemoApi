@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using WebApplication.Data.ApiCreator;
+using WebApplication.Logic;
 
 namespace WebApplication
 {
@@ -26,7 +28,8 @@ namespace WebApplication
         {
             services.AddControllers();
 
-            //services.AddTransient<IHttpClientFactory, HttpClient>();
+            services.AddTransient<IApiFactory,UserApiFactory>();
+            services.AddTransient<IWebLogic,WebLogic>();
             services.AddHttpClient();
 
         }

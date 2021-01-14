@@ -15,11 +15,11 @@ namespace WebApplication.Controllers
     [Route("[controller]")]
     public class DemoApiController : ControllerBase
     {
-        private readonly WebLogic _webLogic;
+        private readonly IWebLogic _webLogic;
         
-        public DemoApiController(IHttpClientFactory httpclient)
+        public DemoApiController(IWebLogic webLogic)
         {
-            _webLogic = new WebLogic(httpclient.CreateClient());
+            _webLogic = webLogic;
 
         }
 

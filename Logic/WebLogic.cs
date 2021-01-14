@@ -10,13 +10,13 @@ using WebApplication.DataApiFactory;
 
 namespace WebApplication.Logic
 {
-    public class WebLogic
+    public class WebLogic : IWebLogic
     {
         private readonly IApi _dataApi;
 
-        public WebLogic(HttpClient httpclient)
+        public WebLogic(IApiFactory userApiFactory)
         {
-            _dataApi = new UserApiFactory().CreateApi(httpclient);
+            _dataApi = userApiFactory.CreateApi();
         }
 
         public async Task<string> Get()

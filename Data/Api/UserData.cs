@@ -12,7 +12,7 @@ namespace WebApplication.Data
 {
     public class UserData : IApi
     {
-        private static string URL = "https://5feb08888ede8b0017ff2386.mockapi.io/user/";
+        private readonly string URL = "https://5feb08888ede8b0017ff2386.mockapi.io/user/";
         private static  HttpClient _httpclient;
         public UserData(HttpClient httpclient)
         {

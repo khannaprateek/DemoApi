@@ -9,6 +9,6 @@ namespace WebApplication.Data.ApiCreator
 {
     public interface IApiFactory
     {
-        public IApi CreateApi(HttpClient httpClient);
+        public IApi CreateApi();
     }
 }

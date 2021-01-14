@@ -9,9 +9,15 @@ namespace WebApplication.Data.ApiCreator
 {
     public class UserApiFactory:IApiFactory
     {
-        public IApi CreateApi(HttpClient httpClient)
+        private readonly HttpClient _httpClient;
+
+        public UserApiFactory(IHttpClientFactory httpClientFactory)
         {
-            return new UserData(httpClient);
+            _httpClient = httpClientFactory.CreateClient();
+        }
+        public IApi CreateApi()
+        {
+            return new UserData(_httpClient);
         }
     }
 }
